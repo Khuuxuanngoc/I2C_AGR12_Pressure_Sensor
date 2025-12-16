@@ -7,6 +7,13 @@
         - Với data từ I2C, giá trị áp suất đã được tính toán trong cảm biến nên code này đọc cho cả 3 loại ngưỡng áp suất.
             - I2C AGR12100C00 (0~100kPa): ~6.5kPA (Bơm chỗ Quí)
             - I2C AGR12010C00 (0~10kPa): ~6.5kPA (Bơm chỗ Quí)
+
+        - Kết nối dây:
+            - Vietduino Uno    -----------------------Sensor
+                  5V      ----------------------------- 1
+                  GND     ----------------------------- 2
+                  SCL     ----------------------------- 3
+                  SDA     ----------------------------- 4
         
 */
 

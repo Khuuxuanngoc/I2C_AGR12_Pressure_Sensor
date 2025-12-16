@@ -8,6 +8,13 @@
             - I2C AGR12010C00 (0~10kPa): ~6.5kPA (Bơm chỗ Quí)
 
             - chạy OK với Vietduino ESP32 (có tích hợp Logic convert I2C 3V3-5V)
+
+        - Kết nối dây:
+            - Vietduino ESP32 -----------------------Sensor
+                  5V      ----------------------------- 1
+                  GND     ----------------------------- 2
+                  SCL     ----------------------------- 3
+                  SDA     ----------------------------- 4
 */
 
 // Định nghĩa I2C Constants
