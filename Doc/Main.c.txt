@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+#include "MYI2C.h"
+
+int main( void )
+{
+	
+	MYI2C_Init(&SENx,1000,0x50);    //1000:读取数据周期1S;   0x50:从机地址
+	
+	while(1) {
+
+
+		 MYI2C_Handle(&SENx);   //不使用死延时则定时10ms调用一次该函数
+	//	 printf("kPa = %0.1f",SENx.kPa);					
+		 MYI2C_Delay_us(10500); //根据MCU调整为10ms延时
+	}	 
+	 
+}
